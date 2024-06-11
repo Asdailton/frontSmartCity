@@ -1,0 +1,32 @@
+.conteiner {
+    display: flex;
+    border-radius: 8px;
+    
+    transition: transform .25s;
+    flex-direction: column;
+    
+   
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-top: 50px;
+    
+}
+
+.conteiner:hover {
+    transform: scale(1.025);
+    box-shadow: 0 0 15px white;
+}
+
+.poster{
+    width: 250px;
+    height: 350px;
+}
+h2{
+    color: white;
+    font-size: 20px;
+}
+p{
+    font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}

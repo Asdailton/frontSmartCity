@@ -1,0 +1,29 @@
+.conteiner{
+    display: flex;
+    flex-direction: column; /* Alteração: Para dispor os itens em coluna */
+    align-items: center;
+    background-color: #1a1a1a;
+   
+}
+
+
+.iconesConteiner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    padding: 20px;
+}
+.icone{
+    margin-top: 70px;
+    width: 50px;
+    cursor:pointer;    
+}
+
+.icone:hover{
+    color: white;
+}
+

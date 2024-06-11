@@ -1,0 +1,49 @@
+.conteiner{
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+}
+.titulo{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    margin-top: 25px;
+
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(41, 40, 41);
+    padding: 30px;
+    border-radius: 10px;
+
+}
+.campo{
+    width: 320px;
+    height: 40px;
+    background-color: transparent;
+    border: solid 1px white;
+    margin-bottom: 10px;
+    padding: 5px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: white;
+
+}
+.botao{
+    background-color: brown;
+    color: white;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+
+.message{
+    font-size: 12px;
+    font-weight: 600px;
+    margin-bottom: 5px;
+    color: red;
+    
+}

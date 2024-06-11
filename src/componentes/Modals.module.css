@@ -1,0 +1,58 @@
+.modalBackdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo escurecido para destacar o modal */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.modalContent {
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 600px;
+    max-height: 80%;
+    overflow: auto;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2); /* Sombra para o modal */
+    display: inline-block; /* Alterado para inline-block */
+    
+}
+
+.textContainer {
+    flex-direction: column;
+}
+
+.imgModal {
+    width: 50%;
+    max-width: 200px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); /* Sombra para a imagem */
+}
+
+button {
+    background-color: red; /* Cor de fundo verde para o botão */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(143, 4, 4); /* Cor de fundo mais escura quando o botão é hover */
+}
+p{
+    color:white
+}

@@ -1,0 +1,119 @@
+/* Cabecalho.module.css */
+.conteiner {
+    display: flex;
+    align-items: center;
+    background-color:#0f0f0f;
+    padding: 10px 20px; 
+}
+
+
+.logotipo{
+    display: flex;
+    align-items: center;
+}
+
+.logotipo p{
+    margin-left: 20px;
+    font-size: 17px;
+    color:#84E4C7
+}
+
+.logotipo img {
+    margin-top: 5px;
+    margin-left: 15px;
+    max-width: 150px; 
+   
+}
+    
+
+.navbar {
+    flex-grow: 1;
+    text-align: center; 
+    display: flex;
+    justify-content: center;
+}
+
+.navbar ul {
+    list-style-type: none; 
+    padding: 0;
+    margin: 0;
+    display: inline-flex; 
+    justify-content: center;
+}
+
+.navbar li {
+    margin-right: 20px; 
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    margin-left: 30px;
+    
+}
+
+.navbar a:hover {
+    color:red; 
+}
+.iconsContainer{
+margin-right: 30px;
+display:flex;
+justify-content: center;
+
+}
+
+.icons{
+    width: 45px;
+height: 45px;
+cursor:pointer
+
+}
+
+.perfilConteiner {
+    margin-left: auto;
+    margin-right: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.perfilImagem{
+    width: 60px;
+}
+
+
+.textPerfil{
+    margin-left:10px
+}
+
+.textPerfil h4{
+    color: #84E4C7;
+    } 
+
+.textPerfil p{
+color: white;
+}
+
+.logout{
+    padding: 15px;
+    background-color: #1a1a1a;
+    margin-left: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+   
+}
+
+.logout a{
+    font-size: 16px;
+    cursor:pointer
+}
+
+.logout:hover{
+   transform: scale(1.02); 
+
+
+}
+

@@ -1,0 +1,65 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    padding: 10px; /* Ajuste conforme necessário */
+    background-color: black;
+}
+
+.title {
+    color: white;
+    margin-left: 70px;
+    margin-top: 40px;
+}
+
+.titleDois{
+    color: white;
+    text-align: center;
+
+}
+
+.banner {
+    height: 400px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.modalConteiner {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-left: 170px;
+    padding-right: 170px;
+    background-color: black;
+}
+
+.modal {
+    flex: 0 0 calc(25% - 10px);
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.modal h3 {
+    color: #84E4C7;
+    margin-top: 0;
+}
+
+.containerTitle{
+    display: flex;
+ 
+}
+
+.containerTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinha os elementos no espaço entre eles */
+    position: relative; /* Adiciona position relative para .containerTop */
+}
+
+.iconeBrasil {
+    width: 50px;
+    position: absolute;
+    margin-right: 20px;
+    right: 0;
+}

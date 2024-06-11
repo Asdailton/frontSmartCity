@@ -1,0 +1,19 @@
+:root {
+  font-family: "Tilt-Neon", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  --cinza-claro: gray;
+  --roxo-escuro: green;
+  --roxo-claro: blue;
+
+ 
+}
+
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+}

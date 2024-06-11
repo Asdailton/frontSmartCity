@@ -1,0 +1,12 @@
+.conteiner{
+    background-color: black;
+}
+
+.conteiner h1{
+    margin-top: 30px;
+    padding-left: 25px;
+}
+
+.mapConteiner{
+    margin-top: 30px;
+}

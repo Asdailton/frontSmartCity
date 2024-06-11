@@ -1,0 +1,139 @@
+.conteiner{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(270deg, #3b67bf, #84e4c7);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 14s ease infinite;
+    -moz-animation: AnimationName 14s ease infinite;
+    animation: AnimationName 8s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+.titulo{
+    color: rgba(132, 228, 199, 1);
+    font-size: 40px;
+    text-align: center;
+
+}
+
+
+
+.logoConteiner{
+    padding: 58px;
+    background-color: rgba(49, 49, 49, 1);
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgba(73, 73, 73, 1);
+    padding: 20px;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.campo {
+    /* Ajuste o width para espaço do ícone */
+    padding: 10px 10px 10px 30px; /* Ajuste o padding esquerdo para espaço do ícone */
+    border: none;
+    outline: none;
+    background: none;
+    box-shadow: none;
+   
+    width: 400px; /* Ajuste o width para 100% */
+    height: 40px;
+    background-color: rgba(49, 49, 49, 1);
+    margin-bottom: 20px;
+    border-radius: 10px;
+    font-size: 15px;
+    color: white;
+}
+   
+
+.inputContainer {
+    position: relative;
+    margin-bottom: 5px;
+  }
+  
+  .icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 10px;
+    top: 35%;
+    transform: translateY(-50%);
+    color: rgba(132, 228, 199, 1); /* Cor do ícone */
+
+  }
+.botao{
+    background-color: rgba(49, 49, 49, 1);
+    color: rgba(132, 228, 199, 1);
+    padding: 10px;
+    border-radius: 8px;
+    
+
+}
+.botao:hover{
+    background-color: white;
+}
+
+.message{
+    font-size: 10px;
+    font-weight: 600px;
+    margin-bottom: 10px;
+    color: red;
+    
+}
+
+a{
+ font-size: 15px;
+ text-decoration: none;
+ color: rgba(132, 228, 199, 1);
+ cursor: pointer;
+
+}
+
+a:hover{
+    color: rgb(93, 156, 137);
+    
+}
+
+p{
+    font-size: 15px;
+}
+.textConteiner p, .textConteiner a {
+    display: inline-block;
+    margin: 0; 
+    padding: 0; 
+    margin-right: 5px;
+  }
+  
+  .textConteiner {
+    text-align: center; 
+    margin-top: 15px;
+   
+  }
