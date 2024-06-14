@@ -5,6 +5,7 @@ import { zodResolver } from '@hookform/resolvers/zod';
 import styles from './LoginPage.module.css';
 import { Outlet, useNavigate, Link } from 'react-router-dom';
 import axios from 'axios';
+import logomarca from "../assets/logomarca.svg"
 
 const schemaPerfil = z.object({
     usuario: z.string()
@@ -51,7 +52,7 @@ export default function Login() {
     return (
        <div className={styles.conteiner}>
            <div className={styles.logoConteiner}>
-             <img className={styles.logo} src="../assets/logomarca.svg" alt="" />
+             <img className={styles.logo} src={logomarca} alt="" />
            </div>
           
            
