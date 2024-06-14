@@ -3,7 +3,7 @@ import axios from 'axios';
 import { Line } from 'react-chartjs-2';
 import 'chart.js/auto'; // Certifique-se de carregar o chart.js
 import { Outlet } from 'react-router-dom';
-import styles from './TemperaturaChart.module.css'; // Importe o arquivo de estilos
+import styles from './UmidadeChart.module.css'; // Importe o arquivo de estilos
 
 export function UmidadeChart() {
   const [chartData, setChartData] = useState({ datasets: [] });
@@ -67,7 +67,18 @@ export function UmidadeChart() {
   
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.card}>
+        <h2>Gráfico de Umidade</h2>
+        <h2>Localização: {sensorLocation}</h2>
+        <p>Este gráfico mostra a umidade em um determinado período.</p>
+        <div className={styles.chartContainer}>
+          <div className={styles.loading}>
+            <p>Carregando...</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -80,7 +91,7 @@ export function UmidadeChart() {
       <h2>Localização: {sensorLocation}</h2>
       <p>Este gráfico mostra a umidade em um determinado período.</p>
       <div className={styles.chartContainer}>
-      <Line
+        <Line
           data={chartData}
           options={{ responsive: true, maintainAspectRatio: false }}
         />
@@ -88,5 +99,3 @@ export function UmidadeChart() {
     </div>
   );
 }
-
-
