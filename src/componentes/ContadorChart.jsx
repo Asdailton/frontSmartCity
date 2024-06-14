@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Bar } from 'react-chartjs-2';
-import 'chart.js/auto'; // Certifique-se de carregar o chart.js
-import styles from './LuminosidadeChart.module.css'; // Importe o arquivo de estilos
+import 'chart.js/auto';
+import styles from './LuminosidadeChart.module.css'; 
 
 export function ContadorChart() {
   const [chartData, setChartData] = useState({ datasets: [] });
@@ -78,7 +78,18 @@ export function ContadorChart() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.card}>
+        <h2>Gráfico de Contagem de Pessoas</h2>
+        <p>Este gráfico mostra o total de pessoas em cada intervalo de tempo.</p>
+        <p>Localização do Sensor: {sensorLocation}</p>
+        <div className={styles.chartContainer}>
+          <div className={styles.loading}>
+            <p>Carregando...</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
