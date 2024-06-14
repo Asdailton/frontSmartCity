@@ -51,7 +51,7 @@ export default function Login() {
     return (
        <div className={styles.conteiner}>
            <div className={styles.logoConteiner}>
-             <img className={styles.logo} src="src/assets/logomarca.svg" alt="" />
+             <img className={styles.logo} src="../assets/logomarca.svg" alt="" />
            </div>
           
            
