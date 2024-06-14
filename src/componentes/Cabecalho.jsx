@@ -30,7 +30,7 @@ export function Cabecalho({navigation}) {
         <>
         <header className={styles.conteiner}>
             <div className={styles.logotipo}>
-                <img src="src/assets/LOGOSENAI.png" alt="Logotipo Senai" />
+                <img src="../assets/LOGOSENAI.png" alt="Logotipo Senai" />
             </div>
             <div className={styles.perfilConteiner}>
                 <div className={styles.textPerfil}>
