@@ -130,7 +130,7 @@ export function Sensor() {
                     onChange={(e) => setResponsavel(e.target.value)}/>
                     <input type="text" placeholder="Localização"
                     onChange={(e)=> setLocalizacao(e.target.value)} /> 
-                    <button onClick={handleFilter}>Pesquisar</button>
+                    <button className={styles.btnFilter} onClick={handleFilter}>Pesquisar</button>
                 </div>
             </div>
             <div className={styles.cards}>
