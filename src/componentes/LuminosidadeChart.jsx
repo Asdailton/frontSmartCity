@@ -73,7 +73,18 @@ export function LuminosidadeChart() {
   }, []);
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.card}>
+        <h2 className={styles.title}>Gráfico de Luminosidade</h2>
+        <h2 className={styles.title}>Localização: {sensorLocation}</h2>
+        <p className={styles.subtitle}>Este gráfico mostra a luminosidade em um determinado período.</p>
+        <div className={styles.chartContainer}>
+          <div className={styles.loading}>
+            <p>Carregando...</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
