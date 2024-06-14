@@ -68,7 +68,18 @@ export function TemperaturaChart() {
   
 
   if (loading) {
-    return <div>Loading...</div>;
+    return (
+      <div className={styles.card}>
+        <h2>Gráfico de Temperatura</h2>
+        <h2>Localização: {sensorLocation}</h2>
+        <p>Este gráfico mostra a temperatura em um determinado período.</p>
+        <div className={styles.chartContainer}>
+          <div className={styles.loading}>
+            <p>Carregando...</p>
+          </div>
+        </div>
+      </div>
+    );
   }
 
   if (error) {
@@ -81,7 +92,7 @@ export function TemperaturaChart() {
       <h2>Localização: {sensorLocation}</h2>
       <p>Este gráfico mostra a temperatura em um determinado período.</p>
       <div className={styles.chartContainer}>
-      <Line
+        <Line
           data={chartData}
           options={{ responsive: true, maintainAspectRatio: false }}
         />
@@ -89,5 +100,3 @@ export function TemperaturaChart() {
     </div>
   );
 }
-
-
