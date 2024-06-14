@@ -37,7 +37,7 @@ h2{
     text-decoration: none;
     border: none;
     box-shadow: none;
-    border-radius: 15px
+    border-radius: 5px
 }
 
 .cadastroButton:hover {
@@ -54,7 +54,7 @@ h2{
     text-decoration: none;
     border: none;
     box-shadow: none;
-    border-radius: 15px
+    border-radius: 5px
 }
 .btnFilter:hover{
     background-color: white;
