@@ -113,9 +113,11 @@ export function CadastroSensor({ onClose }) {
                     placeholder="Observacao"
                 />
                 {errors.observacao && <p className={styles.message}>{errors.observacao.message}</p>}
-
-                <button type="submit" className={styles.botao}>Cadastrar</button>
-                <button type="button" onClick={onClose} className={styles.botao}>Fechar</button>
+                <div className={styles.btnConteiner}>
+                    <button type="submit" className={styles.botao}>Cadastrar</button>
+                    <button type="button" onClick={onClose} className={styles.botao}>Fechar</button>
+                </div>
+               
             </form>
 
             {showModal && (
