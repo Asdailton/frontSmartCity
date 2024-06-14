@@ -107,7 +107,8 @@
 }
 .botao:hover{
     background-color: white;
-    transition: 0.5s
+    transition: 0.5s;
+    color: black
 }
 
 .message{
