@@ -94,6 +94,8 @@
     color: rgba(132, 228, 199, 1);
     padding: 10px;
     border-radius: 8px;
+    border: none;
+    box-shadow: none;
     
 
 }
