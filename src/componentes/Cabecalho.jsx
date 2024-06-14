@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Cabecalho.module.css';
 import { Outlet } from 'react-router-dom';
 import { useEffect, useState } from 'react';
-
+import logoSenai from "../assets/LOGOSENAI.png";
 export function Cabecalho({navigation}) {
     const username = localStorage.getItem('username');
     const email = localStorage.getItem('email');
@@ -30,7 +30,7 @@ export function Cabecalho({navigation}) {
         <>
         <header className={styles.conteiner}>
             <div className={styles.logotipo}>
-                <img src="../assets/LOGOSENAI.png" alt="Logotipo Senai" />
+                <img src={logoSenai} alt="Logotipo Senai" />
             </div>
             <div className={styles.perfilConteiner}>
                 <div className={styles.textPerfil}>
