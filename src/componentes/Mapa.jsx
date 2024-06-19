@@ -3,6 +3,17 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
+// Define a custom icon
+const customIcon = new L.Icon({
+    iconUrl: '/marker-icon.png',
+    iconRetinaUrl: '/marker-icon-2x.png',
+    shadowUrl: '/marker-shadow.png',
+    iconSize: [25, 41],
+    iconAnchor: [12, 41],
+    popupAnchor: [1, -34],
+    shadowSize: [41, 41],
+});
+
 export default function Mapa({ pontos }) {
     const [mapaInicializado, setMapaInicializado] = useState(false);
 
@@ -36,7 +47,11 @@ export default function Mapa({ pontos }) {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
             {pontos.map((ponto, index) => (
-                <Marker key={index} position={[ponto.latitude, ponto.longitude]}>
+                <Marker 
+                    key={index} 
+                    position={[ponto.latitude, ponto.longitude]} 
+                    icon={customIcon} // Use the custom icon
+                >
                     <Popup>
                         <strong>Tipo:</strong> {ponto.tipo}<br />
                         <strong>Localização:</strong> {ponto.localizacao}<br />
