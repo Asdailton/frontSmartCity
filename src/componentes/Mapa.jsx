@@ -3,15 +3,15 @@ import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import L from 'leaflet';
 
-// Define a custom icon
+// Definir um ícone personalizado com caminhos absolutos
 const customIcon = new L.Icon({
-    iconUrl: '/marker-icon.png',
-    iconRetinaUrl: '/marker-icon-2x.png',
-    shadowUrl: '/marker-shadow.png',
-    iconSize: [25, 41],
-    iconAnchor: [12, 41],
-    popupAnchor: [1, -34],
-    shadowSize: [41, 41],
+    iconUrl: `${process.env.PUBLIC_URL}/marker-icon.png`,
+    iconRetinaUrl: `${process.env.PUBLIC_URL}/marker-icon-2x.png`,
+    shadowUrl: `${process.env.PUBLIC_URL}/marker-shadow.png`,
+    iconSize: [25, 41],  // Tamanho do ícone
+    iconAnchor: [12, 41],  // Ponto do ícone que estará ancorado à posição do marcador
+    popupAnchor: [1, -34],  // Ponto do popup em relação ao ponto ancorado do ícone
+    shadowSize: [41, 41],  // Tamanho da sombra
 });
 
 export default function Mapa({ pontos }) {
@@ -47,11 +47,7 @@ export default function Mapa({ pontos }) {
                 attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
             />
             {pontos.map((ponto, index) => (
-                <Marker 
-                    key={index} 
-                    position={[ponto.latitude, ponto.longitude]} 
-                    icon={customIcon} // Use the custom icon
-                >
+                <Marker key={index} position={[ponto.latitude, ponto.longitude]} icon={customIcon}>
                     <Popup>
                         <strong>Tipo:</strong> {ponto.tipo}<br />
                         <strong>Localização:</strong> {ponto.localizacao}<br />
